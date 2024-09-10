@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean class="in.min.beans.Address" id="addrId1" autowire-candidate="false" >
+	     <property name="houseNo" value="137" />
+         <property name="city" value="Purnia" />
+         <property name="pinCode" value="854326" />
+
+	</bean>
+	
+	<bean class="in.min.beans.Address" id="addrId2"  > 
+	     <property name="houseNo" value="958" />
+         <property name="city" value="Shaheen Bagh" />
+         <property name="pinCode" value="110025" />
+
+	</bean>
+	
+	<bean class="in.min.beans.Student" id="stdId" autowire="byType">
+	     <property name="name" value="Minhaj" />
+         <property name="rollNo" value="102" />
+
+	</bean>
+
+</beans>
